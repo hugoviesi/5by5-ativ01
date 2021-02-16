@@ -1,0 +1,7 @@
+C:\Users\viesi\source\repos\POO 2.0 ex1\POO 2.0 ex1\bin\Debug\POO 2.0 ex1.exe.config
+C:\Users\viesi\source\repos\POO 2.0 ex1\POO 2.0 ex1\bin\Debug\POO 2.0 ex1.exe
+C:\Users\viesi\source\repos\POO 2.0 ex1\POO 2.0 ex1\bin\Debug\POO 2.0 ex1.pdb
+C:\Users\viesi\source\repos\POO 2.0 ex1\POO 2.0 ex1\obj\Debug\POO 2.0 ex1.csprojAssemblyReference.cache
+C:\Users\viesi\source\repos\POO 2.0 ex1\POO 2.0 ex1\obj\Debug\POO 2.0 ex1.csproj.CoreCompileInputs.cache
+C:\Users\viesi\source\repos\POO 2.0 ex1\POO 2.0 ex1\obj\Debug\POO 2.0 ex1.exe
+C:\Users\viesi\source\repos\POO 2.0 ex1\POO 2.0 ex1\obj\Debug\POO 2.0 ex1.pdb
