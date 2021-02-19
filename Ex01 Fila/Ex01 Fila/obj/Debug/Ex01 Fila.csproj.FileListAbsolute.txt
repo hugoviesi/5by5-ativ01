@@ -1,0 +1,7 @@
+C:\Users\viesi\source\repos\Ex01 Fila\Ex01 Fila\obj\Debug\Ex01 Fila.csprojAssemblyReference.cache
+C:\Users\viesi\source\repos\Ex01 Fila\Ex01 Fila\obj\Debug\Ex01 Fila.csproj.CoreCompileInputs.cache
+C:\Users\viesi\source\repos\Ex01 Fila\Ex01 Fila\bin\Debug\Ex01 Fila.exe.config
+C:\Users\viesi\source\repos\Ex01 Fila\Ex01 Fila\bin\Debug\Ex01 Fila.exe
+C:\Users\viesi\source\repos\Ex01 Fila\Ex01 Fila\bin\Debug\Ex01 Fila.pdb
+C:\Users\viesi\source\repos\Ex01 Fila\Ex01 Fila\obj\Debug\Ex01 Fila.exe
+C:\Users\viesi\source\repos\Ex01 Fila\Ex01 Fila\obj\Debug\Ex01 Fila.pdb
