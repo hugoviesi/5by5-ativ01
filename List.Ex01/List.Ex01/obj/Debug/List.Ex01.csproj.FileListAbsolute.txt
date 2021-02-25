@@ -1,0 +1,7 @@
+C:\Users\viesi\source\repos\List.Ex01\List.Ex01\bin\Debug\List.Ex01.exe.config
+C:\Users\viesi\source\repos\List.Ex01\List.Ex01\bin\Debug\List.Ex01.exe
+C:\Users\viesi\source\repos\List.Ex01\List.Ex01\bin\Debug\List.Ex01.pdb
+C:\Users\viesi\source\repos\List.Ex01\List.Ex01\obj\Debug\List.Ex01.csprojAssemblyReference.cache
+C:\Users\viesi\source\repos\List.Ex01\List.Ex01\obj\Debug\List.Ex01.csproj.CoreCompileInputs.cache
+C:\Users\viesi\source\repos\List.Ex01\List.Ex01\obj\Debug\List.Ex01.exe
+C:\Users\viesi\source\repos\List.Ex01\List.Ex01\obj\Debug\List.Ex01.pdb
