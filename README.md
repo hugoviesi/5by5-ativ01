@@ -4,4 +4,4 @@
 - Atividade 01 - dia 17/02/2021
 - Atividade 01 - dia 18/02/2021
 - Lista - Arquivos - Lista Telefônica
-- Atividade - Ônibus - Dupla: Hugo e Jacque
+- Atividade 1 e 2 - Ônibus - Dupla: Hugo e Jacque
