@@ -166,27 +166,62 @@ insert into LinhaLogradouro values (5, 5, 5, 'Ida')
 insert into LinhaLogradouro values (6, 6, 6, 'Volta')
 select * from LinhaLogradouro
 
--- Item a) Tabela com Nome da Empresa e ID Linha:
-SELECT E.Nome AS "Empresa", L.IDLinha AS "Linha"
+-- ITEM A: TABELA NOME E CNPJ DA EMPRESA E O ID DA LINHA
+SELECT E.Nome AS "Empresa", E.CNPJ AS "CNPJ", L.IDLinha AS "Linha"
 FROM EmpresaLinha EL
 JOIN Empresa E ON E.CNPJ = EL.CNPJ
-JOIN Linha L ON L.IdLinha = EL.IdLinha;
+JOIN Linha L ON L.IdLinha = EL.IdLinha
+WHERE E.Nome like 'Empresa Cruz' -- Digitar o nome da empresa específica
+ORDER BY L.IdLinha
 
--- Item b) Tabela com Nome da Linha e ID Logradouro
-SELECT L.Nome AS "Nome da Linha", LO.IDLogradouro AS "Logradouro"
-FROM LinhaLogradouro LG
-JOIN Linha L ON L.IDLinha = LG.IDLinha
-JOIN Logradouro LO ON LO.IDLogradouro = LG.IDLogradouro;
+-- Não específico
+SELECT E.Nome AS "Empresa", E.CNPJ AS "CNPJ", L.IDLinha AS "Linha"
+FROM EmpresaLinha EL
+JOIN Empresa E ON E.CNPJ = EL.CNPJ
+JOIN Linha L ON L.IdLinha = EL.IdLinha
+ORDER BY L.IdLinha
 
--- Item c) Tabela com Nome da Linha e seu Horario
-SELECT L.Nome AS "Nome da Linha", H.Hora AS "Horário"
-FROM QuadroHorario QH
-JOIN Linha L ON L.IDLinha = QH.IDQuadroHorario
-JOIN Horario H ON H.IDQuadroHorario = QH.IDQuadroHorario
-
--- Item d) Tabela com Nome Linha e Nome do Logradouro
-SELECT L.Nome AS "Nome da Linha", LO.NomeLog AS "Logradouro"
+-- ITEM B: TABELA COM NOME DA LINHA, ID E NOME DO LOGRADOURO
+SELECT L.Nome AS "Nome da Linha", LO.IDLogradouro AS "ID do Logradouro", LO.NomeLog AS "Nome do Logradouro"
 FROM LinhaLogradouro LG
 JOIN Linha L ON L.IDLinha = LG.IDLinha
 JOIN Logradouro LO ON LO.IDLogradouro = LG.IDLogradouro
-WHERE LO.NomeLog like 'Rua Neide Manicure'; -- Digitar o nome do logradouro específico
+WHERE L.Nome like 'Metro do Morumbi' -- Digitar o nome da linha específica
+ORDER BY LG.IDLogradouro
+
+-- Não específico:
+SELECT L.Nome AS "Nome da Linha", LO.IDLogradouro AS "Logradouro", LO.NomeLog AS "Nome do Logradouro"
+FROM LinhaLogradouro LG
+JOIN Linha L ON L.IDLinha = LG.IDLinha
+JOIN Logradouro LO ON LO.IDLogradouro = LG.IDLogradouro
+ORDER BY LG.IDLogradouro
+
+-- ITEM C: TABELA COM NOME, HORÁRIO E O PERÍODO DA LINHA
+SELECT L.Nome AS "Nome da Linha", H.Hora AS "Horário", H.DiaSemana AS "Período"
+FROM QuadroHorario QH
+JOIN Linha L ON L.IDLinha = QH.IDQuadroHorario
+JOIN Horario H ON H.IDQuadroHorario = QH.IDQuadroHorario
+WHERE L.Nome like 'Praça da Sé' -- Digitar o nome da linha específica
+ORDER BY H.Hora
+
+-- Não específico
+SELECT L.Nome AS "Nome da Linha", H.Hora AS "Horário", H.DiaSemana AS "Período"
+FROM QuadroHorario QH
+JOIN Linha L ON L.IDLinha = QH.IDQuadroHorario
+JOIN Horario H ON H.IDQuadroHorario = QH.IDQuadroHorario
+ORDER BY H.Hora
+
+-- ITEM D: TABELA COM NOME E SENTIDO DA LINHA E NOME DO LOGRADOURO
+SELECT L.Nome AS "Nome da Linha", LO.NomeLog AS "Logradouro", LG.Sentido AS "Sentido"
+FROM LinhaLogradouro LG
+JOIN Linha L ON L.IDLinha = LG.IDLinha
+JOIN Logradouro LO ON LO.IDLogradouro = LG.IDLogradouro
+WHERE LO.NomeLog like 'Rua Neide Manicure' -- Digitar o nome do logradouro específico
+ORDER BY L.Nome
+
+-- Não específico
+SELECT L.Nome AS "Nome da Linha", LO.NomeLog AS "Logradouro", LG.Sentido AS "Sentido"
+FROM LinhaLogradouro LG
+JOIN Linha L ON L.IDLinha = LG.IDLinha
+JOIN Logradouro LO ON LO.IDLogradouro = LG.IDLogradouro
+ORDER BY L.Nome
